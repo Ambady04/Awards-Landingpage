@@ -1,0 +1,1596 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  background: 0 0;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  outline: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  list-style: none;
+  max-width: 1920px;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+button {
+  display: block;
+}
+
+@font-face {
+  font-family: "Gordita Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gordita Regular"),
+    url("./Assets/fonts/Gordita Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gordita Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gordita Medium"),
+    url("./Assets/fonts/Gordita Medium.woff") format("woff");
+}
+
+#MainContainer {
+  background-color: #141414;
+  font-family: "Gordita Medium";
+}
+
+#Header {
+  height: 125px;
+  background-color: #141414;
+}
+
+#Header .wrapper {
+  width: 96%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+#Header .wrapper header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#Header .wrapper header .left {
+  width: 20%;
+  margin-left: 50px;
+}
+
+#Header .wrapper header .left h1 {
+  width: 85%;
+}
+
+#Header .wrapper header .left h1 img {
+  display: block;
+  width: 100%;
+}
+
+#Header .wrapper header .right {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 80px;
+}
+
+#Header > section > header > div.right > div {
+  display: none;
+}
+
+#Header .wrapper header .right h4 {
+  font-family: "Gordita Regular";
+}
+#Header .wrapper header .right h4 a {
+  color: #b2b2b2;
+}
+
+#Header .wrapper header .right h4 a:hover {
+  color: #fff;
+  font-family: "Gordita Medium";
+}
+
+#Header > section > header > div.right > h4:nth-child(3) > a {
+  font-family: "Gordita Medium";
+  font-size: 17px;
+  color: #fff;
+}
+
+#Header .wrapper header .right a.btn1 {
+  border-radius: 8px;
+  font-family: "Gordita Medium";
+  font-size: 1rem;
+  padding: 15px 35px;
+  color: #ed4e09;
+  border: solid 1px transparent;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(101deg, #d45945, #a14d9b);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #141414 inset;
+}
+
+#MainContainer #spotlight {
+  background-color: #141414;
+}
+
+#MainContainer #spotlight .wrapper {
+  background-color: #141414;
+  display: flex;
+  justify-content: space-between;
+}
+
+#MainContainer #spotlight .wrapper .left {
+  width: 40%;
+  margin-left: 80px;
+}
+
+#MainContainer #spotlight .wrapper .left h1 {
+  color: #fff;
+  font-size: 50px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+#MainContainer #spotlight .wrapper .left h1 .awards {
+  color: #fc5200;
+}
+
+#MainContainer #spotlight .wrapper .left p {
+  color: #c2c2c2;
+  font-family: "Gordita Regular";
+  font-size: 18px;
+  padding-bottom: 50px;
+}
+
+#MainContainer #spotlight .wrapper .left .btns {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(101deg, #d45945, #a14d9b);
+  border-radius: 7px;
+  width: 200px;
+  height: 70px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+#MainContainer #spotlight .wrapper .left .btns btns-child {
+  margin-top: 10px;
+}
+
+.one {
+  color: #c2c2c2;
+  font-size: 15px;
+  font-family: "Gordita Regular";
+}
+
+.two {
+  color: #fff;
+  font-size: 15px;
+}
+
+#MainContainer #spotlight .wrapper .right {
+  width: 55%;
+  position: relative;
+  margin-right: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./Assets/images/pattern-color.png"),
+    url("./Assets/images/pattern-color.png");
+  background-size: 30%;
+  background-position: 20% 58%, 80% 16%;
+  background-repeat: no-repeat, no-repeat;
+}
+
+#MainContainer #spotlight .wrapper .right .img-spot {
+  width: 100%;
+  position: absolute;
+  left: 10;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(35px);
+}
+#MainContainer #spotlight .wrapper .right .img-spot img {
+  width: 100%;
+  display: block;
+  display: flex;
+  padding-left: 150px;
+}
+
+#MainContainer #Awards {
+  background-color: #141414;
+}
+
+#MainContainer #Awards .wrapper {
+  background-color: #141414;
+}
+
+#MainContainer #Awards .wrapper .Boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+}
+
+#MainContainer #Awards .wrapper .Boxes .box {
+  width: 19%;
+  height: 65%;
+  padding: 20px;
+  border-radius: 13px;
+  color: #fff;
+  margin-right: 20px;
+  margin-left: 20px;
+  border: solid 1px transparent;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(101deg, #d45945, #a14d9b);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #141414 inset;
+}
+
+#MainContainer #Awards .wrapper .Boxes .box:hover {
+  height: 70%;
+  background-color: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(101deg, #ed4e09, #b54795);
+  box-shadow: none;
+}
+
+#MainContainer #Awards .wrapper .Boxes .box .header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+#MainContainer #Awards .wrapper .Boxes .box .header .icons {
+  background-color: #262525;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#MainContainer #Awards .wrapper .Boxes .box .header .date {
+  color: #fff;
+  font-size: 13px;
+}
+
+#MainContainer #Awards .wrapper .Boxes .box .title {
+  color: #fff;
+}
+
+#MainContainer #Awards .wrapper .Boxes .box h4 {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+#MainContainer #Awards .wrapper .Boxes .box .cross {
+  width: 60px;
+  height: 15px;
+  display: block;
+}
+
+#MainContainer #Awards .wrapper .Boxes .box .cross img {
+  display: block;
+  width: 100%;
+}
+
+#MainContainer #Awards .wrapper .Boxes .box .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+#MainContainer #Awards .wrapper .Boxes .box .footer .arrow {
+  width: 15%;
+}
+
+#MainContainer #new-design {
+  background-color: #141414;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#MainContainer #new-design .wrapper {
+  background-color: #141414;
+  width: 85%;
+}
+
+#MainContainer #new-design .wrapper .new-design {
+  height: 515px;
+  background-image: linear-gradient(
+      to right,
+      rgba(212, 89, 69, 0) 50%,
+      rgba(240, 47, 23, 0.29) 60%,
+      rgba(246, 41, 12, 0.49) 100%,
+      rgba(248, 80, 50, 0.7) 100%,
+      rgb(241, 84, 60) 100%
+    ),
+    url("./Assets/images/Footer-image.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  margin-bottom: 100px;
+}
+
+#new-design > section > div > h3 {
+  width: 500px;
+  color: #fff;
+  font-size: 40px;
+  margin-left: 50px;
+  padding-top: 100px;
+}
+
+#MainContainer #new-design .wrapper .new-design p {
+  width: 500px;
+  margin-top: 40px;
+  margin-left: 50px;
+  color: #959595;
+  font-family: "Gordita Regular";
+}
+
+#MainContainer #new-design .wrapper .new-design .input-box {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+#MainContainer #new-design .wrapper .new-design .input-box input {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+#MainContainer #new-design .wrapper .new-design .input-box .last-btn {
+  font-family: "Gordita Regular";
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(101deg, #ed4e09, #b54795);
+  padding: 22px;
+  border-radius: 10px;
+  position: relative;
+  left: -30px;
+  color: #fff;
+  font-weight: 200;
+}
+
+#MainContainer #footer {
+  background-color: #141414;
+}
+
+#MainContainer #footer .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#MainContainer #footer .wrapper footer {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 65px;
+}
+
+#MainContainer #footer .wrapper footer .left {
+  width: 30%;
+}
+
+#MainContainer #footer .wrapper footer .left a {
+  display: block;
+  width: 180px;
+  margin-bottom: 15px;
+}
+
+#MainContainer #footer .wrapper footer .left p {
+  color: #5b5a5d;
+}
+
+#MainContainer #footer .wrapper footer .right {
+  width: 70%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+#MainContainer #footer .wrapper footer .right h5 a {
+  color: #5b5a5d;
+  font-size: 15px;
+  margin-right: 30px;
+}
+
+#MainContainer #footer .wrapper footer .right .pipe {
+  height: 60px;
+  border-left: 4 solid #5b5a5d;
+  border-color: #b2b2b2;
+  width: 1.5px;
+  background-color: #5b5a5d;
+}
+
+#MainContainer #footer .wrapper footer .right p {
+  color: #5b5a5d;
+  margin-left: 20px;
+}
+
+#MainContainer #footer .wrapper footer .right p a {
+  color: #d45945;
+}
+
+@media only screen and (max-width: 1280px) {
+  #MainContainer #spotlight .wrapper .right {
+    width: 55%;
+    position: relative;
+    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./Assets/images/pattern-color.png),
+      url(./Assets/images/pattern-color.png);
+    background-size: 30%;
+    background-position: 25% 45%, 80% 16%;
+    background-repeat: no-repeat, no-repeat;
+  }
+  #MainContainer #new-design .wrapper .new-design {
+    height: 436px;
+    background-image: linear-gradient(
+        to right,
+        rgba(212, 89, 69, 0) 50%,
+        rgba(240, 47, 23, 0.29) 60%,
+        rgba(246, 41, 12, 0.49) 100%,
+        rgba(248, 80, 50, 0.7) 100%,
+        rgb(241, 84, 60) 100%
+      ),
+      url(./Assets/images/Footer-image.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  #Header .wrapper header .left h1 {
+    width: 100%;
+  }
+  #Header .wrapper header .right {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+  }
+  #Header .wrapper header .right h4 {
+    font-family: "Gordita Regular";
+    font-size: 15px;
+  }
+  #MainContainer #spotlight .wrapper .left h1 {
+    color: #fff;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+  }
+  #MainContainer #spotlight .wrapper .left p {
+    color: #c2c2c2;
+    font-family: "Gordita Regular";
+    font-size: 13px;
+    padding-bottom: 40px;
+  }
+  #MainContainer #spotlight .wrapper .left .btns {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+      ),
+      linear-gradient(101deg, #d45945, #a14d9b);
+    border-radius: 7px;
+    width: 180px;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+  .one {
+    color: #c2c2c2;
+    font-size: 13px;
+    font-family: "Gordita Regular";
+  }
+  .two {
+    color: #fff;
+    font-size: 13px;
+  }
+  #MainContainer #spotlight .wrapper .right .img-spot img {
+    width: 100%;
+    display: block;
+    display: flex;
+    padding-left: 100px;
+    padding-top: 100pxv;
+  }
+  #MainContainer #spotlight .wrapper .right {
+    width: 55%;
+    position: relative;
+    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./Assets/images/pattern-color.png),
+      url(./Assets/images/pattern-color.png);
+    background-size: 30%;
+    background-position: 35% 75%, 80% 31%;
+    background-repeat: no-repeat, no-repeat;
+  }
+  #MainContainer #spotlight .wrapper {
+    background-color: #141414;
+    display: flex;
+    justify-content: space-between;
+  }
+  #MainContainer #Awards .wrapper .Boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+  }
+  #MainContainer #Awards .wrapper .Boxes .box {
+    width: 20%;
+    height: 60%;
+    padding: 15px;
+    border-radius: 13px;
+    color: #fff;
+    border: solid 1px transparent;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+      ),
+      linear-gradient(101deg, #d45945, #a14d9b);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #141414 inset;
+  }
+  #MainContainer #Awards .wrapper .Boxes .box h4 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  #MainContainer #Awards .wrapper .Boxes .box .header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  #MainContainer #Awards .wrapper .Boxes .box .cross {
+    width: 50px;
+    height: 12px;
+    display: block;
+  }
+  #MainContainer #Awards .wrapper .Boxes .box .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  #MainContainer #Awards .wrapper .Boxes .box:hover {
+    height: 65%;
+    background-color: linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+      ),
+      linear-gradient(101deg, #ed4e09, #b54795);
+    box-shadow: none;
+  }
+  #MainContainer #new-design .wrapper .new-design {
+    height: 334px;
+    background-image: linear-gradient(
+        to right,
+        rgba(212, 89, 69, 0) 50%,
+        rgba(240, 47, 23, 0.29) 60%,
+        rgba(246, 41, 12, 0.49) 100%,
+        rgba(248, 80, 50, 0.7) 100%,
+        rgb(241, 84, 60) 100%
+      ),
+      url(./Assets/images/Footer-image.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    margin-bottom: 80px;
+  }
+  #new-design > section > div > h3 {
+    width: 500px;
+    color: #fff;
+    font-size: 30px;
+    margin-left: 50px;
+    padding-top: 45px;
+  }
+  #MainContainer #new-design .wrapper .new-design p {
+    width: 500px;
+    margin-top: 20px;
+    margin-left: 50px;
+    color: #959595;
+    font-family: "Gordita Regular";
+  }
+  #MainContainer #new-design .wrapper .new-design .input-box input {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  #MainContainer #new-design .wrapper .new-design .input-box .last-btn {
+    font-family: "Gordita Regular";
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+      ),
+      linear-gradient(101deg, #ed4e09, #b54795);
+    padding: 17px;
+    border-radius: 10px;
+    position: relative;
+    left: -30px;
+    color: #fff;
+    font-weight: 200;
+  }
+  #MainContainer #new-design .wrapper .new-design .input-box {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    margin-left: 50px;
+  }
+  #MainContainer #footer .wrapper footer {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 40px;
+  }
+  #MainContainer #footer .wrapper footer .left a {
+    display: block;
+    width: 180px;
+    margin-bottom: 10px;
+  }
+  #MainContainer #footer .wrapper footer .left p {
+    color: #5b5a5d;
+    font-size: 13px;
+  }
+  #MainContainer #footer .wrapper footer .right h5 a {
+    color: #5b5a5d;
+    font-size: 11px;
+    margin-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #Header .wrapper header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+  }
+  #Header .wrapper header .right {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 5px;
+  }
+  #Header .wrapper header .right h4 {
+    font-family: "Gordita Regular";
+    font-size: 12px;
+  }
+  #Header > section > header > div.right > h4:nth-child(3) > a {
+    font-family: "Gordita Medium";
+    font-size: 15px;
+    color: #fff;
+  }
+  #Header .wrapper header .right a.btn1 {
+    border-radius: 8px;
+    font-family: "Gordita Medium";
+    font-size: 13px;
+    padding: 12px 20px;
+    color: #ed4e09;
+    border: solid 1px transparent;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+      ),
+      linear-gradient(101deg, #d45945, #a14d9b);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #141414 inset;
+  }
+  #MainContainer #spotlight .wrapper {
+    background-color: #141414;
+    display: flex;
+    justify-content: space-between;
+  }
+  #MainContainer #spotlight .wrapper .left h1 {
+    color: #fff;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  #MainContainer #spotlight .wrapper .left {
+    width: 40%;
+    margin-left: 65px;
+  }
+  #MainContainer #spotlight .wrapper .left p {
+    color: #c2c2c2;
+    font-family: "Gordita Regular";
+    font-size: 11px;
+    padding-bottom: 30px;
+  }
+  #MainContainer #spotlight .wrapper .left .btns {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+      ),
+      linear-gradient(101deg, #d45945, #a14d9b);
+    border-radius: 7px;
+    width: 160px;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .one {
+    color: #c2c2c2;
+    font-size: 11px;
+    font-family: "Gordita Regular";
+  }
+  .two {
+    color: #fff;
+    font-size: 11px;
+  }
+  #MainContainer #spotlight .wrapper .right {
+    width: 55%;
+    position: relative;
+    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./Assets/images/pattern-color.png),
+      url(./Assets/images/pattern-color.png);
+    background-size: 20%;
+    background-position: 34% 60%, 75% 34%;
+    background-repeat: no-repeat, no-repeat;
+  }
+  #MainContainer #Awards .wrapper .Boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+  }
+  #MainContainer #Awards .wrapper .Boxes .box .header .icons {
+    background-color: #262525;
+    padding: 5px;
+    border-radius: 8px;
+  }
+  #Awards > section > section > div:nth-child(1) > div > span > a > img {
+    width: 80%;
+    display: block;
+  }
+  #MainContainer #Awards .wrapper .Boxes .box .header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  #MainContainer #Awards .wrapper .Boxes .box .header .date {
+    color: #fff;
+    font-size: 8px;
+  }
+  #MainContainer #Awards .wrapper .Boxes .box h4 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  #MainContainer #Awards .wrapper .Boxes .box .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+  }
+  #Awards > section > section > div > section > h5 {
+    font-size: 10px;
+  }
+  #MainContainer #Awards .wrapper .Boxes .box .cross {
+    width: 30px;
+    height: 8px;
+    display: block;
+  }
+  #MainContainer #new-design .wrapper .new-design {
+    height: 262px;
+    background-image: linear-gradient(
+        to right,
+        rgba(212, 89, 69, 0) 50%,
+        rgba(240, 47, 23, 0.29) 60%,
+        rgba(246, 41, 12, 0.49) 100%,
+        rgba(248, 80, 50, 0.7) 100%,
+        rgb(241, 84, 60) 100%
+      ),
+      url(./Assets/images/Footer-image.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    margin-bottom: 45px;
+  }
+  #new-design > section > div > h3 {
+    width: 500px;
+    color: #fff;
+    font-size: 25px;
+    margin-left: 50px;
+    padding-top: 30px;
+  }
+  #MainContainer #new-design .wrapper .new-design p {
+    width: 500px;
+    margin-top: 10px;
+    margin-left: 50px;
+    color: #959595;
+    font-size: 15px;
+    font-family: "Gordita Regular";
+  }
+  #MainContainer #new-design .wrapper .new-design .input-box {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 50px;
+  }
+  #MainContainer #new-design .wrapper .new-design .input-box input {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  #MainContainer #new-design .wrapper .new-design .input-box .last-btn {
+    font-family: "Gordita Regular";
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+      ),
+      linear-gradient(101deg, #ed4e09, #b54795);
+    padding: 12px;
+    border-radius: 10px;
+    position: relative;
+    left: -30px;
+    color: #fff;
+    font-weight: 200;
+  }
+  #MainContainer #footer .wrapper footer {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+  }
+  #MainContainer #footer .wrapper footer .left {
+    width: 20%;
+  }
+  #footer > section > footer > div.left > p {
+    color: #5b5a5d;
+    font-size: 10px !important;
+  }
+  #MainContainer #footer .wrapper footer .right {
+    width: 80%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-left: 30px;
+  }
+  #MainContainer #footer .wrapper footer .right h5 a {
+    color: #5b5a5d;
+    font-size: 11px;
+    width: 64px;
+    margin-right: 8px;
+    display: inline-block;
+  }
+  #MainContainer #footer .wrapper footer .right p {
+    color: #5b5a5d;
+    margin-left: 15px;
+    font-size: 12px;
+  }
+  #MainContainer #Awards .wrapper .Boxes .box {
+    width: 20%;
+    height: 60%;
+    padding: 15px;
+    border-radius: 13px;
+    color: #fff;
+    border: solid 1px transparent;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+      ),
+      linear-gradient(101deg, #d45945, #a14d9b);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #141414 inset;
+    margin-right: -10px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  #MainContainer #spotlight .wrapper .left h1 {
+    color: #fff;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+  #MainContainer #spotlight .wrapper .left p {
+    color: #c2c2c2;
+    font-family: "Gordita Regular";
+    font-size: 11px;
+    padding-bottom: 20px;
+  }
+  #MainContainer #spotlight .wrapper .right {
+    width: 55%;
+    position: relative;
+    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./Assets/images/pattern-color.png),
+      url(./Assets/images/pattern-color.png);
+    background-size: 16%;
+    background-position: 46% 43%, 77% 20%;
+    background-repeat: no-repeat, no-repeat;
+  }
+  #MainContainer #Awards .wrapper .Boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+  }
+  #MainContainer #Awards .wrapper .Boxes .box {
+    width: 22%;
+    height: 65%;
+    padding: 15px;
+    border-radius: 13px;
+    color: #fff;
+    border: solid 1px transparent;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+      ),
+      linear-gradient(101deg, #d45945, #a14d9b);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #141414 inset;
+    margin-right: -13px;
+  }
+  #MainContainer #Awards .wrapper .Boxes .box .header {
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  #Awards > section > section > div > div > span > a {
+    width: 60%;
+    display: block;
+  }
+  #MainContainer #Awards .wrapper .Boxes .box .header .icons {
+    background-color: transparent;
+    padding: 0px !important;
+    border-radius: 0px !important;
+    width: 40px !important;
+  }
+  #MainContainer #Awards .wrapper .Boxes .box h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  #MainContainer #Awards .wrapper .Boxes .box:hover {
+    height: 68%;
+    background-color: linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+      ),
+      linear-gradient(101deg, #ed4e09, #b54795);
+    box-shadow: none;
+  }
+  #MainContainer #new-design .wrapper .new-design {
+    height: 217px;
+    background-image: linear-gradient(
+        to right,
+        rgba(212, 89, 69, 0) 50%,
+        rgba(240, 47, 23, 0.29) 60%,
+        rgba(246, 41, 12, 0.49) 100%,
+        rgba(248, 80, 50, 0.7) 100%,
+        rgb(241, 84, 60) 100%
+      ),
+      url(./Assets/images/Footer-image.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    margin-bottom: 45px;
+  }
+  #MainContainer #new-design .wrapper .new-design p {
+    width: 500px;
+    margin-top: 5px;
+    margin-left: 50px;
+    color: #959595;
+    font-size: 15px;
+    font-family: "Gordita Regular";
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #Header {
+    height: 80px;
+    background-color: #141414;
+  }
+  #Header .wrapper header .left h1 {
+    width: 8rem;
+  }
+  #Header .wrapper header .right {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 5px;
+  }
+  #Header > section > header > div.right > div {
+    display: block;
+    width: 20px;
+    margin-right: 25px;
+  }
+  #Header .wrapper header .right a.btn1 {
+    display: none;
+  }
+  #Header .wrapper header .right h4 {
+    display: none;
+  }
+  #MainContainer #spotlight .wrapper .left h1 {
+    color: #fff;
+    font-size: 20px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+  }
+  #MainContainer #spotlight .wrapper .left .btns {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+      ),
+      linear-gradient(101deg, #d45945, #a14d9b);
+    border-radius: 7px;
+    width: 130px;
+    height: 55px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .one {
+    color: #c2c2c2;
+    font-size: 10px;
+    font-family: "Gordita Regular";
+  }
+  .two {
+    color: #fff;
+    font-size: 10px;
+  }
+  #MainContainer #spotlight .wrapper .right {
+    width: 55%;
+    position: relative;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./Assets/images/pattern-color.png),
+      url(./Assets/images/pattern-color.png);
+    background-size: 12%;
+    background-position: 25% 46%, 74% 21%;
+    background-repeat: no-repeat, no-repeat;
+  }
+  #MainContainer #spotlight .wrapper .right .img-spot img {
+    width: 100%;
+    display: block;
+    display: flex;
+    padding-left: 50px;
+    padding-top: 100pxv;
+  }
+  #MainContainer #Awards .wrapper .Boxes .box {
+    width: 40%;
+    height: 60%;
+    padding: 10px;
+    border-radius: 13px;
+    color: #fff;
+    border: solid 1px transparent;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+      ),
+      linear-gradient(101deg, #d45945, #a14d9b);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #141414 inset;
+    margin-right: 0px;
+    margin-bottom: 15px;
+  }
+  #MainContainer #Awards .wrapper {
+    background-color: #141414;
+    height: 470px;
+    margin-top: 30px;
+  }
+  #MainContainer #Awards .wrapper .Boxes .box .header {
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  #MainContainer #Awards .wrapper .Boxes .box .title {
+    color: #fff;
+    font-size: 13px;
+  }
+  #MainContainer #Awards .wrapper .Boxes .box h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 10px;
+  }
+  #MainContainer #Awards .wrapper .Boxes .box .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  #MainContainer #Awards .wrapper .Boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    margin-right: 20px;
+    flex-wrap: wrap;
+  }
+  #MainContainer #Awards .wrapper .Boxes .box:hover {
+    height: 65%;
+    background-color: linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+      ),
+      linear-gradient(101deg, #ed4e09, #b54795);
+    box-shadow: none;
+  }
+  #MainContainer #new-design .wrapper .new-design {
+    height: 164px;
+    background-image: linear-gradient(
+        to right,
+        rgba(212, 89, 69, 0) 50%,
+        rgba(240, 47, 23, 0.29) 60%,
+        rgba(246, 41, 12, 0.49) 100%,
+        rgba(248, 80, 50, 0.7) 100%,
+        rgb(241, 84, 60) 100%
+      ),
+      url(./Assets/images/Footer-image.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    margin-bottom: 35px;
+  }
+  #new-design > section > div > h3 {
+    width: 500px;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 30px;
+    padding-top: 20px;
+  }
+  #MainContainer #new-design .wrapper .new-design p {
+    width: 500px;
+    margin-left: 30px;
+    color: #959595;
+    font-size: 12px;
+    font-family: "Gordita Regular";
+  }
+  #MainContainer #new-design .wrapper .new-design .input-box {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 30px;
+  }
+  #MainContainer #new-design .wrapper .new-design .input-box input {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  #MainContainer #new-design .wrapper .new-design .input-box .last-btn {
+    font-family: "Gordita Regular";
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+      ),
+      linear-gradient(101deg, #ed4e09, #b54795);
+    padding: 7px;
+    border-radius: 10px;
+    position: relative;
+    left: -30px;
+    color: #fff;
+    font-weight: 200;
+  }
+  #MainContainer #footer .wrapper footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+  #MainContainer #footer .wrapper footer .left {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #MainContainer #footer .wrapper footer .left a {
+    display: block;
+    width: 135px;
+    margin-bottom: 10px;
+  }
+  #footer > section > footer > div.left > p {
+    color: #5b5a5d;
+    font-size: 7px !important;
+  }
+  #MainContainer #footer .wrapper footer .right {
+    width: 75%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    flex-wrap: wrap;
+  }
+  #MainContainer #footer .wrapper footer .right .pipe {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  #Header {
+    height: 50px;
+    background-color: #141414;
+  }
+  #Header .wrapper header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-top: 10px;
+  }
+  #Header .wrapper header .left {
+    width: 20%;
+    margin-left: 30px;
+  }
+  #MainContainer #spotlight .wrapper .left {
+    width: 40%;
+    margin-left: 40px;
+  }
+  #MainContainer #spotlight .wrapper .left h1 {
+    color: #fff;
+    font-size: 12px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+  }
+  #MainContainer #spotlight .wrapper .left p {
+    color: #c2c2c2;
+    font-family: "Gordita Regular";
+    font-size: 9px;
+    padding-bottom: 5px;
+  }
+  #MainContainer #spotlight .wrapper .left .btns {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+      ),
+      linear-gradient(101deg, #d45945, #a14d9b);
+    border-radius: 7px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .one {
+    color: #c2c2c2;
+    font-size: 8px;
+    font-family: "Gordita Regular";
+  }
+  .two {
+    color: #fff;
+    font-size: 8px;
+  }
+  #spotlight > section > section.left > div > div {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  #MainContainer #spotlight .wrapper {
+    background-color: #141414;
+    display: flex;
+    justify-content: space-between;
+  }
+  #MainContainer #Awards .wrapper .Boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    margin-right: 20px;
+    flex-wrap: wrap;
+  }
+  #MainContainer #Awards .wrapper .Boxes .box {
+    width: 44%;
+    height: 63%;
+    padding: 10px;
+    border-radius: 13px;
+    color: #fff;
+    border: solid 1px transparent;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+      ),
+      linear-gradient(101deg, #d45945, #a14d9b);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #141414 inset;
+    margin-right: -10px;
+    margin-bottom: 11px;
+  }
+  #MainContainer #Awards .wrapper .Boxes .box .header {
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  #MainContainer #Awards .wrapper .Boxes .box .title {
+    color: #fff;
+    font-size: 12px;
+  }
+  #MainContainer #Awards .wrapper .Boxes .box h4 {
+    margin-top: 3px;
+    margin-bottom: 5px;
+    font-size: 10px;
+  }
+  #MainContainer #Awards .wrapper .Boxes .box .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+  }
+  #MainContainer #new-design .wrapper .new-design {
+    /* height: 123px; */
+    background-image: linear-gradient(
+        to right,
+        rgba(212, 89, 69, 0) 50%,
+        rgba(240, 47, 23, 0.29) 60%,
+        rgba(246, 41, 12, 0.49) 100%,
+        rgba(248, 80, 50, 0.7) 100%,
+        rgb(241, 84, 60) 100%
+      ),
+      url(./Assets/images/Footer-image.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  #new-design > section > div > h3 {
+    /* width: 500px; */
+    color: #fff;
+    font-size: 15px;
+    /* margin-left: 20px; */
+    padding-top: 10px;
+  }
+  #MainContainer #new-design .wrapper .new-design p {
+    /* width: 500px; */
+    margin-left: 30px;
+    color: #959595;
+    margin-top: 1px;
+    font-size: 11px;
+    font-family: "Gordita Regular";
+  }
+  #MainContainer #new-design .wrapper .new-design .input-box {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  #MainContainer #new-design .wrapper .new-design .input-box input {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  #MainContainer
+    #new-design
+    .wrapper
+    .new-design
+    .input-box
+    input::placeholder {
+    font-size: 10px;
+    font-family: "Gordita Regular";
+  }
+
+  #MainContainer #new-design .wrapper .new-design .input-box .last-btn {
+    font-family: "Gordita Regular";
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+      ),
+      linear-gradient(101deg, #ed4e09, #b54795);
+    padding: 5px;
+    border-radius: 5px;
+    position: relative;
+    left: -50px;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 200;
+  }
+  #MainContainer #footer .wrapper footer .right p {
+    color: #5b5a5d;
+    margin-left: 15px;
+    font-size: 12px;
+    margin-right: 50px;
+  }
+  #MainContainer #spotlight .wrapper .right .img-spot img {
+    width: 100%;
+    display: block;
+    display: flex;
+    padding-left: 30px;
+    padding-top: 100pxv;
+  }
+  #MainContainer #Awards .wrapper {
+    background-color: #141414;
+    height: 490px;
+  }
+  #footer > section > footer > div.left > p {
+    color: #5b5a5d;
+    font-size: 8px !important;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #Header .wrapper header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-top: 12px;
+  }
+  #MainContainer #spotlight .wrapper {
+    background-color: #141414;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #MainContainer #spotlight .wrapper .left h1 {
+    color: #fff;
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+  #MainContainer #spotlight .wrapper .left p {
+    color: #c2c2c2;
+    font-family: "Gordita Regular";
+    font-size: 9px;
+    padding-bottom: 10px;
+  }
+  #MainContainer #spotlight .wrapper .right {
+    width: 100%;
+    position: static;
+    margin-right: 0px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./Assets/images/pattern-color.png),
+      url(./Assets/images/pattern-color.png);
+    background-size: 12%;
+    background-position: 17% 80%, 74% 32%;
+    background-repeat: no-repeat, no-repeat;
+  }
+  #MainContainer #spotlight .wrapper .right .img-spot {
+    width: 100%;
+    position: static;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(35px);
+  }
+  #MainContainer #spotlight .wrapper .left {
+    width: 70%;
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  #MainContainer #spotlight .wrapper .right .img-spot img {
+    width: 100%;
+    display: block;
+    display: flex;
+  }
+  #new-design > section > div > h3 {
+    /* width: 500px; */
+    color: #fff;
+    font-size: 17px;
+    /* margin-left: 20px; */
+    padding-top: 10px;
+  }
+  #MainContainer #new-design .wrapper .new-design p {
+    /* width: 500px; */
+    margin-left: 30px;
+    color: #959595;
+    margin-top: 1px;
+    font-size: 10px;
+    font-family: "Gordita Regular";
+  }
+  #MainContainer #footer .wrapper footer .right {
+    width: 80%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    flex-wrap: wrap;
+  }
+  #footer > section > footer > div.right > h5:nth-child(4) > a {
+    margin-right: 20px !important;
+  }
+  #MainContainer #spotlight .wrapper .left .btns {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+      ),
+      linear-gradient(101deg, #d45945, #a14d9b);
+    border-radius: 7px;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}
